@@ -1,8 +1,20 @@
 ---
 title: "Data Processing Libraries. Part II"
 date: 2020-02-24T13:20:48+01:00
-draft: true
+draft: false
+
+categories: [ "Data processing", "Reaserch" ]
+tags: [
+    "vulnerability",
+    "exploit",
+    "code review",
+    "GraphicsMagick"
+]
 ---
+
+
+GraphicsMagick before 1.3.32 allows malicious user to get access to arbitary file on vulnerable server.
+<!--more-->
 
 # CVE-2019-12921
 - Title:         Arbitary file read at TranslateTextEx GraphicsMagick before 1.3.32
@@ -55,9 +67,13 @@ exploit.svg is:
 	x="0" y="0" height="137px" width="137px"/></svg>
 ```
 
-Function SetImageAttribute(Image *image,const char *key,const char *value) do not properly translate comments and label for this image that allow attacker to get file contents when image attributes will be written for image formats like JPEG and GIF. To reproduce vulnerability convert image:
-`gm convert exploit.svg output.gif`
-`gm convert exploit.svg output.jpeg`
+Function SetImageAttribute(Image \*image,const char \*key,const char \*value) do not properly translate comments and label for this image that allow attacker to get file contents when image attributes will be written for image formats like JPEG and GIF. To reproduce vulnerability convert image:
+```bash
+gm convert exploit.svg output.gif
+```
+```bash
+gm convert exploit.svg output.jpeg
+```
 Image attributes (comments section) will contains file contents.
 
 ### Timeline

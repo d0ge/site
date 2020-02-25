@@ -6,7 +6,7 @@ disableLanguages = ["zh"]
 theme = "LoveIt"
 # themes directory
 # themesDir = "themes/LoveIt"
-
+# Open Sans
 # whether to use robots.txt
 enableRobotsTXT = true
 # whether to use git commit log to generate lastmod record
