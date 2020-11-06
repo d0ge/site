@@ -1,5 +1,5 @@
 ---
-title: "Security of Data processing libraries Part 1 - Information gathering"
+title: "Security of Data processing libraries Part 1"
 date: 2020-02-24T10:51:03+01:00
 draft: false
 author: "d4d"
@@ -202,7 +202,7 @@ Properties:
 
 > Note! GraphicsMagick does not add image properties `Thumb::`
 
-# TO DO
+# Exploits
 
 You can find all payloads at Github [repository](https://github.com/d0ge/data-processing)
 
