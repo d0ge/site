@@ -1,7 +1,7 @@
 ---
 title: "Multiple vulnerabilities at Craft CMS SEOmatic plugin"
 date: 2020-11-06T16:12:40+01:00
-draft: true
+draft: false
 author: "d4d"
 authorLink: "https://twitter.com/d4d89704243"
 description: "Remote code execution, Server Side Request Forgery at Craft CMS SEOmatic plugin"
